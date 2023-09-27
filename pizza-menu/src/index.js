@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./Header";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 const pizzaData = [
   {
@@ -54,28 +57,6 @@ function App() {
       <Footer />
     </div>
   );
-}
-
-function Header() {
-  return <h1>Fast React Pizza Co.</h1>;
-}
-
-function Menu() {
-  return (
-    <div>
-      <h2>Our Menu</h2> <Pizza />
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>{new Date().toLocaleTimeString()} We're currently open</footer>
-  );
-}
-
-function Pizza() {
-  return <img src="pizzas/funghi.jpg" />;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
