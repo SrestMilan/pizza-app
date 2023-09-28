@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Header from "./Header";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import "./index.css";
 
 const pizzaData = [
   {
@@ -51,11 +52,13 @@ const pizzaData = [
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Menu />
-      <Footer />
-    </div>
+    <>
+      <div className="continer">
+        <Header />
+        <Menu />
+        <Footer />
+      </div>
+    </>
   );
 }
 

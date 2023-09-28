@@ -8,7 +8,9 @@ function Footer() {
   //   if (hour >= openHour && hour <= closeHour) alert("We're currently open!");
   //   else alert("Sorry we're close");
   return (
-    <footer>{new Date().toLocaleTimeString()} We're currently open</footer>
+    <footer className="footer">
+      {new Date().toLocaleTimeString()} We're currently open
+    </footer>
   );
 }
 
